@@ -189,7 +189,7 @@ class Game {
         }의 데미지를 받았다.`
       );
     } else if (input === "3") {
-      // 화면전환
+      // 화면전환`
       this.changeScreen("game");
       this.showMessage(`무사히 ${this.monster.name}으로부터 도망쳤다.`);
     }
