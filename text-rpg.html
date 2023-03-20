@@ -7,11 +7,13 @@
     <title>text-rpg</title>
   </head>
   <body>
+    <!-- 이름을 입력 받기 -->
     <form id="start-screen">
       <input id="name-input" placeholder="주인공 이름을 입력하세요!" />
       <input type="submit" value="시작" id="start" />
     </form>
     <div>
+      <!-- 히어로 객체 -->
       <div id="hero-start">
         <span id="hero-name"></span>
         <span id="hero-level"></span>
@@ -19,6 +21,7 @@
         <span id="hero-xp"></span>
         <span id="hero-att"></span>
       </div>
+      <!-- 게임메뉴 화면 -->
       <form id="game-menu" style="display: none">
         <div id="menu-1">1.모험</div>
         <div id="menu-2">2.휴식</div>
@@ -26,6 +29,7 @@
         <input id="menu-input" />
         <input type="submit" value="입력" id="menu-button" />
       </form>
+      <!-- 배틀메뉴 화면 -->
       <form id="battle-menu" style="display: none">
         <div id="battle-1">1.공격</div>
         <div id="battle-2">2.회복</div>
@@ -33,7 +37,9 @@
         <input id="battle-input" />
         <input type="submit" value="입력" id="battle-button" />
       </form>
+      <!-- 현재 상태 출력 -->
       <div id="message"></div>
+      <!-- 몬스터 객체 -->
       <div id="monster-start">
         <span id="monster-name"></span>
         <span id="monster-hp"></span>
