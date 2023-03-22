@@ -23,15 +23,15 @@
         transition: bottom 1s;
       }
       .gopher {
-        background: url(/solve/image/gopher.png);
+        background: url(image/gopher.png);
         background-size: 200px 200px;
       }
       .bomb {
-        background: url(/solve/image/bomb.png);
+        background: url(image/bomb.png);
         background-size: 200px 200px;
       }
       .boom {
-        background: url(/solve/image/explode.png);
+        background: url(image/explode.png);
         background-size: 200px 200px;
       }
       .hidden {
@@ -42,7 +42,7 @@
         height: 150px;
         position: absolute;
         bottom: 0;
-        background: url(/solve/image/mole-hole.png);
+        background: url(image/mole-hole.png);
         background-size: 200px 150px;
       }
       .hole-front {
@@ -50,17 +50,19 @@
         height: 30px;
         position: absolute;
         bottom: 0;
-        background: url(/solve/image/mole-hole-front.png);
+        background: url(image/mole-hole-front.png);
         background-size: 200px 30px;
       }
     </style>
   </head>
   <body>
+    <!-- life랑 남은시간 출력 -->
     <div>
       <span id="life"></span>&nbsp;<span id="timer">0</span>초&nbsp;
       <span id="score">0</span>점
       <button id="start">시작</button>
     </div>
+    <!-- 두더지 테이블 만들기 -->
     <div id="game">
       <div class="row">
         <div class="cell">
